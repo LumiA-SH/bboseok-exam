@@ -1,0 +1,30 @@
+.diary {
+    text-align: left;
+    justify-items: start;
+    font-size: 14px;
+}
+@media (max-width: 480px) {
+    .page {
+        padding: 18px 10px;
+    }
+    .sheet {
+        padding: 26px 20px;
+    }
+    .page-body {
+        gap: 16px;
+    }
+    .button-row .button {
+        flex: 1 1 100%;
+    }
+    .document {
+        padding: 20px 8px;
+    }
+    .data-list {
+        font-size: 13px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition: none !important;
+    }
+}

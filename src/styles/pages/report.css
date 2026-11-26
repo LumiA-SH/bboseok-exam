@@ -1,0 +1,18 @@
+.report {
+    --line: #cbbda4;
+    --muted: #786d60;
+    background: #f7f1e4;
+    color: #342d25;
+    border: 4px double #a68b60;
+    padding: clamp(16px, 4vw, 30px);
+    text-align: center;
+    display: grid;
+    gap: 14px;
+}
+.report h3 {
+    color: #963d34;
+    font-size: 22px;
+}
+.report .data-list {
+    text-align: left;
+}

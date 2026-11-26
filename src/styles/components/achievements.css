@@ -1,0 +1,23 @@
+.achievement-list {
+    border: 1px solid var(--line);
+    padding: 12px 16px;
+}
+.achievement-list summary {
+    cursor: pointer;
+}
+.achievement {
+    padding: 12px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 4px;
+    color: var(--muted);
+}
+.achievement:first-of-type {
+    margin-top: 12px;
+}
+.achievement.earned {
+    color: var(--ink);
+}
+.achievement small {
+    font-size: 12px;
+}

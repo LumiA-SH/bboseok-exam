@@ -1,0 +1,284 @@
+.ending-mark {
+    font-family: 'Noto Serif KR', 'Batang', '바탕', serif;
+}
+h1 {
+    font-size: clamp(26px, 5vw, 38px);
+    font-weight: 600;
+}
+.page-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px 0;
+}
+.page-footer {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+}
+.page-footer small {
+    display: block;
+    margin-top: 9px;
+}
+.subtitle, .signature, .ending-mark, .big-ending {
+    text-align: center;
+}
+.subtitle {
+    color: var(--muted);
+    font-size: 14px;
+}
+.signature {
+    font-family: 'Batang', serif;
+    font-size: 15px;
+}
+.document {
+    border: 1px solid var(--line);
+    padding: 28px 14px;
+    text-align: center;
+    display: grid;
+    gap: 18px;
+    justify-items: center;
+    line-height: 2;
+}
+.seal {
+    width: 64px;
+    height: 64px;
+    border: 3px double #fff4e4;
+    outline: 2px solid #a33d34;
+    background: #a33d34;
+    color: #fff4e4;
+    font: bold 19px/1.2 'Batang', serif;
+    letter-spacing: .12em;
+    transform: rotate(-6deg);
+}
+.seal:active {
+    transform: rotate(-9deg) scale(.96);
+}
+.button, .choice {
+    min-height: 44px;
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    padding: 10px 16px;
+    background: var(--accent);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: filter .15s, background .15s;
+}
+.button:hover {
+    filter: brightness(1.09);
+}
+.button.secondary, .choice {
+    color: var(--ink);
+    background: transparent;
+    border-color: var(--line);
+}
+.choice {
+    text-align: left;
+}
+.choice.selected, .choice:hover {
+    background: var(--soft);
+    border-color: var(--accent);
+}
+.choices {
+    display: grid;
+    gap: 8px;
+}
+.button-row, .link-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.button-row .button {
+    flex: 1 1 auto;
+}
+.link-row {
+    gap: 12px 20px;
+    font-size: 14px;
+}
+.text-button {
+    border: 0;
+    background: none;
+    padding: 7px 0;
+    color: var(--muted);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    align-self: center;
+    min-height: 36px;
+}
+.quiet-link, .fineprint {
+    text-align: center;
+    font-size: 13px;
+}
+.small {
+    font-size: 13px;
+}
+.muted, .note {
+    color: var(--muted);
+}
+.rule {
+    height: 1px;
+    background: var(--line);
+}
+.notice {
+    background: var(--soft);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+.notice .button {
+    display: block;
+    margin-top: 12px;
+    width: 100%;
+}
+.hint {
+    border-top: 1px dashed var(--line);
+    padding-top: 6px;
+    text-align: center;
+    font-size: 13px;
+}
+.hint p {
+    color: var(--muted);
+}
+.system {
+    --bg: #e7ebee;
+    --panel: #fff;
+    --ink: #23313b;
+    --muted: #596b77;
+    --line: #c4cfd7;
+    --accent: #315d78;
+    --soft: #edf3f6;
+}
+.system .sheet {
+    border-top: 5px solid var(--accent);
+}
+.night {
+    --bg: #101419;
+    --panel: #1b222b;
+    --ink: #e1e6ec;
+    --muted: #a7b1bd;
+    --line: #414c5a;
+    --accent: #7065bc;
+    --soft: #252e39;
+}
+.night a:not(.button) {
+    color: #b9b0ff;
+}
+.error-code {
+    font: 600 16px/1.5 Consolas, monospace;
+    color: #a53b36;
+    background: #fff0ee;
+    padding: 12px;
+}
+.data-list {
+    display: grid;
+    grid-template-columns: minmax(105px, 1fr) minmax(0, 1.25fr);
+    margin: 0;
+    font-size: 14px;
+}
+.data-list dt, .data-list dd {
+    margin: 0;
+    padding: 9px 4px;
+    border-bottom: 1px solid var(--line);
+    overflow-wrap: anywhere;
+}
+.data-list dt {
+    color: var(--muted);
+}
+.data-list dd {
+    text-align: right;
+    font-weight: 600;
+}
+.disguised {
+    color: inherit;
+    text-decoration: none;
+}
+.disguised:hover, .disguised:focus-visible {
+    text-decoration: underline;
+}
+.praise-box {
+    background: var(--soft);
+    border: 1px solid var(--line);
+    padding: 20px;
+    display: grid;
+    gap: 14px;
+}
+.praise-box > p:first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.meter {
+    width: 100%;
+    height: 14px;
+    border: 0;
+    border-radius: 3px;
+    background: var(--line);
+    padding: 0;
+    overflow: hidden;
+}
+.meter span {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+    transition: width .25s;
+}
+.meter.clickable {
+    min-height: 30px;
+}
+.progress-number {
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    font-variant-numeric: tabular-nums;
+}
+.answer-form {
+    display: grid;
+    gap: 10px;
+}
+.answer-form label, .field-label {
+    font-size: 14px;
+    color: var(--muted);
+}
+input {
+    width: 100%;
+    min-width: 0;
+    border: 1px solid var(--line);
+    padding: 11px 12px;
+    border-radius: 3px;
+    color: var(--ink);
+    background: var(--panel);
+}
+.secret-document {
+    border: 1px dashed var(--line);
+    padding: 24px;
+    text-align: center;
+    color: var(--muted);
+}
+.secret-document.revealed {
+    color: #fff1a6;
+    font-size: 19px;
+    letter-spacing: .09em;
+}
+.ending-mark {
+    color: var(--accent);
+    font-size: 62px;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+.final-prose {
+    display: grid;
+    gap: 22px;
+    text-align: center;
+    font-family: 'Noto Serif KR', 'Batang', serif;
+    font-size: 17px;
+    line-height: 2;
+}
+.big-ending {
+    font-size: 39px;
+    font-weight: bold;
+    color: var(--accent);
+}

@@ -1,0 +1,24 @@
+.system {
+    --bg: #e7ebee;
+    --panel: #fff;
+    --ink: #23313b;
+    --muted: #596b77;
+    --line: #c4cfd7;
+    --accent: #315d78;
+    --soft: #edf3f6;
+}
+.system .sheet {
+    border-top: 5px solid var(--accent);
+}
+.night {
+    --bg: #101419;
+    --panel: #1b222b;
+    --ink: #e1e6ec;
+    --muted: #a7b1bd;
+    --line: #414c5a;
+    --accent: #7065bc;
+    --soft: #252e39;
+}
+.night a:not(.button) {
+    color: #b9b0ff;
+}
