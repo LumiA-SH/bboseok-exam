@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bboseok-exam/static/css/main.055d3bb9.css",
+    "main.js": "/bboseok-exam/static/js/main.d87ada3b.js",
+    "index.html": "/bboseok-exam/index.html",
+    "main.055d3bb9.css.map": "/bboseok-exam/static/css/main.055d3bb9.css.map",
+    "main.d87ada3b.js.map": "/bboseok-exam/static/js/main.d87ada3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.055d3bb9.css",
+    "static/js/main.d87ada3b.js"
+  ]
+}
